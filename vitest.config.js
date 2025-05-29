@@ -6,9 +6,12 @@ export default defineConfig({
   test: {
     environment: "jsdom",
     coverage: {
-      provider: "v8",
-      extension: [".tsx"],
+      provider: 'v8',
+      extension: ['.js', '.jsx'], // ✅ correct extensions for JSX project
+      include: ['src/**/*.{js,jsx}'], // ✅ include source files for coverage
+      exclude: ['**/*.test.*', '**/__tests__/**'], // ✅ ignore test files
       reporter: ['text', 'json-summary', 'json'],
+      reportsDirectory: './coverage',
     },
   },
 });
