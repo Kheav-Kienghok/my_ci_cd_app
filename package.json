@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "test": "vitest --no-watch",
+    "coverage": "vitest run --coverage",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -16,6 +17,7 @@
     ]
   },
   "dependencies": {
+    "coverage": "^0.4.1",
     "next": "15.3.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
@@ -26,6 +28,7 @@
     "@testing-library/dom": "^10.4.0",
     "@testing-library/react": "^16.3.0",
     "@vitejs/plugin-react": "^4.5.0",
+    "@vitest/coverage-v8": "^3.1.4",
     "eslint": "^9",
     "eslint-config-next": "15.3.2",
     "husky": "^9.1.7",
